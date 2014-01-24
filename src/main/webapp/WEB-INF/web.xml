@@ -23,7 +23,7 @@
 	<env-entry>
 		<env-entry-name>infinispan.cachestore.location</env-entry-name>
 		<env-entry-type>java.lang.String</env-entry-type>
-		<env-entry-value>/UTempFilesCx</env-entry-value>   <!-- In Windows, this would be something like C:\\blah\blah-->
+		<env-entry-value>/.UTempFilesCx</env-entry-value>   <!-- In Windows, this would be something like C:\\blah\blah-->
 	</env-entry>
 
 
