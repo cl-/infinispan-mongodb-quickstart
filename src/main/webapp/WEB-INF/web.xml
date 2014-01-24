@@ -20,15 +20,10 @@
 		<welcome-file>landingPage.jsp</welcome-file>
 	</welcome-file-list>
 	
-	<context-param>
-		<param-name>infinispan.cachestore.location</param-name>
-		<param-value>/home/navssurtani/hacking/single-file-store/</param-value>
-	</context-param>
-
 	<env-entry>
 		<env-entry-name>infinispan.cachestore.location</env-entry-name>
 		<env-entry-type>java.lang.String</env-entry-type>
-		<env-entry-value>/home/navssurtani/.ispn-store</env-entry-value>
+		<env-entry-value>/path/to/your/directory</env-entry-value>   <!-- In Windows, this would be something like C:\\blah\blah-->
 	</env-entry>
 
 
