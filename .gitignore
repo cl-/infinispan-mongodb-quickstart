@@ -7,9 +7,10 @@
 *.war
 *.ear
 
+### Unignore for "master_compiled" branch
 # Maven outputs
-target
-target/*
+### target
+### target/*
 
 # ignore eclipse files
 .project
