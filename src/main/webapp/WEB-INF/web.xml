@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xmlns="http://java.sun.com/xml/ns/javaee"
+				 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+				 version="2.5">
+
+	<!-- The LoginService servlet -->
+	<servlet>
+		<servlet-name>crudServlet</servlet-name>
+		<servlet-class>org.infinispan.quickstart.mongodb.server.CrudServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>crudServlet</servlet-name>
+		<url-pattern>/infinispanMongoDB/CrudService</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>landingPage.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<context-param>
+		<param-name>infinispan.cachestore.location</param-name>
+		<param-value>/home/navssurtani/hacking/single-file-store/</param-value>
+	</context-param>
+
+	<env-entry>
+		<env-entry-name>infinispan.cachestore.location</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>/home/navssurtani/.ispn-store</env-entry-value>
+	</env-entry>
+
+
+</web-app>
+
