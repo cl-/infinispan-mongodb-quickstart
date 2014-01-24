@@ -1,0 +1,2 @@
+serviceClass: org.infinispan.quickstart.mongodb.client.CrudService
+path: F6B10B7BECD22354F954835FBD7FB0A9.gwt.rpc
